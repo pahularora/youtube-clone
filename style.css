@@ -467,7 +467,7 @@ body {
   .hamburger {
     position: relative;
     bottom: 3px;
-    left: 0;
+    left: 4px;
     padding: 0;
     margin-right: 8px;
   }
@@ -483,7 +483,7 @@ body {
 
   .user {
     position: relative;
-    right: 20px;
+    right: 0px;
   }
 
   /* Hide search box, show search icon */
