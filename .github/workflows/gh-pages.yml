@@ -18,6 +18,12 @@ jobs:
           mkdir build
           cp -r html/* build/
           cp -r css build/
+          cp -r img build/
+
+      - name: Setup git config
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
