@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/dda58d8145.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/youtube.css">
+  <link rel="icon" href="https://www.youtube.com/favicon.ico" type="image/x-icon">
+
+
+  <title>Youtube clone</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- ========== Navbar (Top Navigation) ========== -->
+    <div class="navbar">
+      <!-- Left section: Hamburger menu & Logo -->
+      <div class="left-nav">
+        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+        <div class="logo"><img src="../img/youtube.png" alt="youtube"></div>
+      </div>
+
+      <!-- Middle section: Search bar & Mic -->
+      <div class="mid-nav">
+        <div class="search-box">
+          <input type="search" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="search-icon-mobile">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="mic">
+          <i class="fa-solid fa-microphone"></i>
+        </div>
+      </div>
+
+      <!-- Right section: Create button, Bell icon, User -->
+      <div class="right-nav">
+        <div class="create">+ Create</div>
+        <div class="user-icons">
+          <i class="fa-solid fa-bell" id="bell"></i>
+          <p class="user">P</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== Sidebar ========== -->
+    <div class="sidebar">
+
+      <!-- Top part of sidebar (logo + hamburger) -->
+      <div class="sidebar-top">
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+        <div class="logo"><img src="/layout/img/youtube.png" alt="Logo"></div>
+      </div>
+
+      <!-- Sidebar navigation links -->
+      <div class="sidebar-item active"><i class="fa-solid fa-house"></i><span>Home</span></div>
+      <div class="sidebar-item"><i class="fa-solid fa-bolt"></i><span>Shorts</span></div>
+      <div class="sidebar-item"><i class="fa-solid fa-film"></i><span>Subscriptions</span></div>
+      <div class="sidebar-item"><i class="fa-solid fa-book"></i><span>Library</span></div>
+      <hr>
+
+      <!-- "You >" section -->
+      <div class="sidebar-item head"><span class="heading-sidebar">You ></span></div>
+      <div class="sidebar-item"><i class="fas fa-history"></i><span>History</span></div>
+      <div class="sidebar-item"><i class="fa-solid fa-list"></i><span>Playlists</span></div>
+      <div class="sidebar-item"><i class="fa-solid fa-video"></i><span>Your videos</span></div>
+      <div class="sidebar-item"><i class="fa-solid fa-clock"></i><span>Watch later</span></div>
+      <div class="sidebar-item"><i class="fa-solid fa-thumbs-up"></i><span>Liked videos</span></div>
+      <hr>
+
+      <!-- Subscriptions section -->
+      <div class="sidebar-item head"><span class="heading-sidebar">Subscriptions</span></div>
+      <div class="sidebar-item sub">
+        <p>C</p><span>Cristiano Ronaldo</span>
+      </div>
+      <div class="sidebar-item sub">
+        <p>L</p><span>Lionel Messi</span>
+      </div>
+      <div class="sidebar-item sub">
+        <p>N</p><span>Neymar Jr.</span>
+      </div>
+      <hr>
+
+      <!-- Explore section -->
+      <div class="sidebar-item head"><span class="heading-sidebar">Explore</span></div>
+      <div class="sidebar-item"><i class="fas fa-shopping-bag"></i><span>Shopping</span></div>
+      <div class="sidebar-item"><i class="fa-solid fa-music"></i><span>Music</span></div>
+      <div class="sidebar-item"><i class="fa-solid fa-film"></i><span>Films</span></div>
+      <div class="sidebar-item"><i class="fas fa-stream"></i><span>Live</span></div>
+      <div class="sidebar-item"><i class="fa-solid fa-gamepad"></i><span>Gaming</span></div>
+      <div class="sidebar-item"><i class="fa-solid fa-book-open"></i><span>Courses</span></div>
+      <hr class="divider bottom-divider">
+    </div>
+
+    <!-- ========== Filter buttons ========== -->
+    <div class="filters">
+      <button class="filter active">All</button>
+      <button class="filter">Music</button>
+      <button class="filter">Live</button>
+      <button class="filter">Gaming</button>
+      <button class="filter">News</button>
+      <button class="filter">Movies</button>
+      <button class="filter">Learning</button>
+      <button class="filter">Sports</button>
+      <button class="filter">Recently uploaded</button>
+    </div>
+
+    <!-- ========== Video Section ========== -->
+    <div class="video-section">
+      <div class="video-card">
+        <div class="thumbnail-container">
+          <img class="thumbnail"
+            src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Cristiano_Ronaldo_free_kick_%285275969984%29.jpg"
+            alt="thumbnail">
+          <span class="duration">10:25</span>
+        </div>
+
+        <div class="video-details">
+          <img class="channel-img"
+            src="https://yt3.googleusercontent.com/0Cs8hMYj14fKdRDzjTlN_CvNZZVx87ktYlqV1nKqInrzzlRz-U9jO_D-FzS6fJJc21Ve81rKmZc=s160-c-k-c0x00ffffff-no-rj"
+            alt="channel">
+          <div class="text">
+            <h4>Top 5 Ronaldo Freekicks</h4>
+            <p class="channel-name">Siuuu</p>
+            <p class="meta">1.2M views • 2 days ago</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="video-card">
+        <div class="thumbnail-container">
+          <img class="thumbnail"
+            src="https://e0.365dm.com/18/02/1600x900/skysports-ronaldo-neymar-psg-real-madrid_4231433.jpg?20180215155357"
+            alt="thumbnail">
+          <span class="duration">20:30</span>
+        </div>
+
+        <div class="video-details">
+          <img class="channel-img" src="https://i.pinimg.com/236x/ef/c6/f9/efc6f97207b835e87746d70baa70b27f.jpg?nii=t"
+            alt="channel">
+          <div class="text">
+            <h4>PSG vs Real Madrid 2018 || RMA 3- 1 PSG</h4>
+            <p class="channel-name">Siuuuuu</p>
+            <p class="meta">10M views • 1 Month ago </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="thumbnail-container">
+
+          <img class="thumbnail"
+            src="https://cdn.vox-cdn.com/thumbor/RlSwXij70zPwQKAVFoP7_dpd9og=/0x100:4000x2767/1400x788/filters:focal(0x100:4000x2767):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/898913/153619916.0.jpg"
+            alt="thumbnail">
+          </a>
+          <span class="duration">13:24</span>
+        </div>
+
+        <div class="video-details">
+          <img class="channel-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3Xv3VIaWl97cJtUJLYiG5raS8xN9oUUlaQ&s"
+            alt="channel">
+          <div class="text">
+            <h4>Real Madrid vs Barcelona 2012 || RMA 2- 1 Barca</h4>
+            <p class="channel-name">Siuuuuuu</p>
+            <p class="meta">200M views • 10 Months ago </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="thumbnail-container">
+          <img class="thumbnail"
+            src="https://i.ytimg.com/vi/RAFjcn73dck/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD9wQ6WIHflSaBJWaV156m2TBq57g"
+            alt="thumbnail">
+          <span class="duration">30:30</span>
+        </div>
+
+        <div class="video-details">
+          <img class="channel-img"
+            src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/01/14/12/Cristiano-Ronaldo.jpg?width=1200&height=1200&fit=crop"
+            alt="channel">
+          <div class="text">
+            <h4>Real Madrid vs Juventus 2018 || RMA 4- 3 Juve</h4>
+            <p class="channel-name">Siuuuuuu</p>
+            <p class="meta">150M views • 10 Months ago </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="thumbnail-container">
+          <img class="thumbnail"
+            src="https://media.assettype.com/outlookindia/2024-06/b07f6e54-6984-49ab-bb0c-467b54629aba/toni_kroos_zrzyqh0nk0eu1snprtvbbd3u6.jpg?w=801&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0"
+            alt="thumbnail">
+          <span class="duration">17:30</span>
+        </div>
+
+        <div class="video-details">
+          <img class="channel-img"
+            src="https://i.guim.co.uk/img/static/sys-images/Sport/Pix/pictures/2015/5/4/1430736836067/Paul-Pogba-009.jpg?width=465&dpr=1&s=none&crop=none"
+            alt="channel">
+          <div class="text">
+            <h4>Real Madrid vs BVB 2024 UCL final || RMA 2- 0 BVB</h4>
+            <p class="channel-name">Siuuuuuu</p>
+            <p class="meta">400M views • 1 year ago </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="thumbnail-container">
+          <img class="thumbnail"
+            src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/02/14/17/sergio-ramos.jpg?width=1200"
+            alt="thumbnail">
+          <span class="duration">35:30</span>
+        </div>
+
+        <div class="video-details">
+          <img class="channel-img" src="https://pbs.twimg.com/profile_images/1821224971659546624/h03H4K9a_400x400.jpg"
+            alt="channel">
+          <div class="text">
+            <h4>Real Madrid vs Atletico madrid 2014 UCL final || La Decima || RMA 4- 1 ATM</h4>
+            <p class="channel-name">Siuuuuuu</p>
+            <p class="meta">4000M views • 1 year ago </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="https://i.ytimg.com/vi/AFEZzf9_EHk/maxresdefault.jpg" alt="thumbnail">
+          <span class="duration">15:30</span>
+        </div>
+
+        <div class="video-details">
+          <img class="channel-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSusUO9O76W5uUZan_39k6HCXpyNDujdlKlCA&s"
+            alt="channel">
+          <div class="text">
+            <h4>India vs Pakistan || 2019 World cup</h4>
+            <p class="channel-name">ICC</p>
+            <p class="meta">400M views • 4 years ago </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="https://i.ytimg.com/vi/nqaYZWfsG48/maxresdefault.jpg" alt="thumbnail">
+          <span class="duration">20:30</span>
+        </div>
+
+        <div class="video-details">
+          <img class="channel-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSusUO9O76W5uUZan_39k6HCXpyNDujdlKlCA&s"
+            alt="channel">
+          <div class="text">
+            <h4>India vs Newzeland || Semi Final || 2023 World cup</h4>
+            <p class="channel-name">ICC</p>
+            <p class="meta">2000M views • 2 years ago </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="thumbnail-container">
+          <img class="thumbnail"
+            src="https://c.ndtvimg.com/2023-10/39r4jna8_rohit-sharma-afp_625x300_11_October_23.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605"
+            alt="thumbnail">
+          <span class="duration">12:30</span>
+        </div>
+
+        <div class="video-details">
+          <img class="channel-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSusUO9O76W5uUZan_39k6HCXpyNDujdlKlCA&s"
+            alt="channel">
+          <div class="text">
+            <h4>India vs Afghanistan || 2023 World cup</h4>
+            <p class="channel-name">ICC</p>
+            <p class="meta">500M views • 2 years ago </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</body>
+
+</html>
