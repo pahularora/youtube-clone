@@ -19,6 +19,7 @@ jobs:
           cp -r html/* build/
           cp -r css build/
           cp -r img build/
+          mv build/youtube.html build/index.html
 
       - name: Setup git config
         run: |
