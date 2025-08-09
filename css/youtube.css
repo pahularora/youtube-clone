@@ -1,0 +1,1033 @@
+/* ========== Global Resets and Base Styles ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(13, 11, 11);
+  color: white;
+}
+
+
+
+/* ========== Navbar ========== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  padding-top: 0;
+  margin-top: 0;
+  height: 64px;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  backdrop-filter: blur(15px);
+  margin-left: 260px;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+.navbar .logo,
+.navbar .hamburger {
+  display: none;
+}
+
+/* Navbar sections */
+.left-nav,
+.mid-nav,
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* ========== User Icons ========== */
+.user-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user {
+  background-color: rgb(20, 4, 80);
+  padding: 5px 10px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* ========== Search Box ========== */
+.search-box {
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 100%;
+  background-color: rgb(20, 19, 19);
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 540px;
+  padding: 8px 12px;
+  background-color: rgb(20, 19, 19);
+  color: white;
+  font-size: 14px;
+}
+
+.search-box i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(37, 36, 36);
+  width: 50px;
+  height: 40px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ========== Mic and Create Button ========== */
+.mic i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(38, 36, 36);
+  border-radius: 50%;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.create {
+  background-color: rgb(38, 36, 36);
+  padding: 8px 16px;
+  border-radius: 15px;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ========== Sidebar ========== */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 260px;
+  background-color: #0f0f0f;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  gap: 10px;
+  z-index: 100;
+  padding-top: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+/* Sidebar item styles */
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.sidebar-item i {
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.sidebar-item p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  background-color: rgb(38, 36, 36);
+  border-radius: 50%;
+  padding: 12px;
+  height: 40px;
+  width: 40px;
+}
+
+/* Top section of sidebar */
+.sidebar-top {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 20px;
+  height: 50px;
+  background-color: #0f0f0f;
+  z-index: 1020;
+}
+
+/* ========== Filters Section ========== */
+.filters {
+  position: sticky;
+  top: 56px;
+  z-index: 99;
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 10px 16px;
+  overflow-x: auto;
+  white-space: nowrap;
+  backdrop-filter: blur(15px);
+  scrollbar-width: none;
+  margin-left: 220px;
+}
+
+.filter {
+  background-color: #272727;
+  color: white;
+  padding: 4px;
+  border-radius: 16px;
+  font-size: 14px;
+  border: none;
+  width: 180px;
+  height: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.filters .active {
+  background-color: white;
+  color: black;
+}
+
+/* ========== Video Section ========== */
+.video-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 243px;
+  padding: 20px;
+  padding-top: 30px;
+  justify-content: flex-start;
+}
+
+.video-card {
+  display: flex;
+  width: 524px;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* Thumbnail Styles */
+.thumbnail {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Video Details */
+.video-details {
+  display: flex;
+  gap: 12px;
+}
+
+.channel-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.text h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.channel-name,
+.meta {
+  font-size: 15px;
+  color: #aaa;
+  margin: 0;
+}
+
+/* Thumbnail Container + Duration Overlay */
+.thumbnail-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.thumbnail-container img.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.duration {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+/* ========== Hover Effects ========== */
+.sidebar:hover {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #555 transparent;
+}
+
+.sidebar-item:not(.active, .head):hover {
+  background-color: #272727;
+  border-radius: 10px;
+  width: 210px;
+}
+
+.mic i:hover {
+  background-color: #504c4c;
+}
+
+.create:hover {
+  background-color: #3f3b3b;
+}
+
+#bell {
+  font-size: 16px;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bell:hover {
+  background-color: #3f3b3b;
+  border-radius: 50%;
+}
+
+.user:hover {
+  cursor: pointer;
+}
+
+.hamburger {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -6px;
+}
+
+.hamburger:hover {
+  background-color: #272727;
+  border-radius: 50%;
+}
+
+.search-box:focus-within {
+  box-shadow: 0 0 0 1px rgb(43, 46, 230);
+  border: none;
+}
+
+.sidebar-item.active {
+  background-color: #272727;
+  border-radius: 10px;
+  width: 210px;
+}
+
+.heading-sidebar {
+  font-weight: bold;
+  pointer-events: none;
+}
+
+/* Mobile Search Icon (hidden by default) */
+.search-icon-mobile {
+  display: none;
+}
+
+
+
+/* ===== Mobile Devices (Up to 480px) ===== */
+@media only screen and (max-width: 480px) {
+
+  /* Hide sidebar on mobile */
+  .sidebar {
+    display: none;
+  }
+
+  /* Fix navbar to top with compact layout */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 8px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    height: 56px;
+  }
+
+  /* Add margin to make room for fixed navbar */
+  body {
+    margin-top: 56px;
+    padding: 0;
+  }
+
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Show logo and hamburger menu on mobile */
+  .navbar .logo,
+  .navbar .hamburger {
+    display: block;
+  }
+
+  /* Stack navbar sections with reduced gaps */
+  .left-nav,
+  .mid-nav,
+  .right-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .left-nav {
+    flex: 0 0 auto;
+  }
+
+  .mid-nav {
+    flex: 1 1 auto;
+    min-width: 0;
+    justify-content: center;
+  }
+
+  /* Restrict search box width */
+  .search-box {
+    width: 100%;
+    max-width: 180px;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .right-nav {
+    flex: 0 0 auto;
+    justify-content: flex-end;
+  }
+
+  /* Make filters horizontal scrollable */
+  .filters {
+    position: sticky;
+    top: 56px;
+    z-index: 999;
+    margin-left: 0;
+    overflow: auto;
+    justify-content: flex-start;
+    gap: 15px;
+    white-space: nowrap;
+  }
+
+  .filters .filter {
+    padding: 8px 30px;
+    margin-right: -3px;
+  }
+
+  /* Position hamburger, hide mic, adjust icons */
+  .hamburger {
+    position: relative;
+    bottom: 3px;
+    left: 4px;
+    padding: 0px;
+    margin-right: 8px;
+  }
+
+  .mic i {
+    display: none;
+  }
+
+  .create {
+    position: relative;
+    right: 30px;
+  }
+
+  .user {
+    position: relative;
+    right: 0px;
+  }
+
+  /* Hide search box, show search icon */
+  .search-box {
+    display: none;
+  }
+
+  .search-icon-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 5px 8px;
+    cursor: pointer;
+    margin-left: -30px;
+  }
+
+  /* Full-width video layout */
+  .video-section {
+    margin-left: 0;
+    padding: 12px;
+    gap: 16px;
+  }
+
+  .video-card {
+    width: 100%;
+    height: 290px;
+    padding: 5px;
+  }
+
+  .thumbnail {
+    height: 275px;
+    aspect-ratio: 16/9;
+  }
+
+  .channel-img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .text h4 {
+    font-size: 15px;
+  }
+
+  .channel-name,
+  .meta {
+    font-size: 13px;
+  }
+
+  /* Hide bell icon on small screens */
+  #bell {
+    display: none;
+  }
+}
+
+/* Small tablets */
+@media only screen and (min-width:481px) and (max-width:705px) {
+  .sidebar {
+    display: none;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 8px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    height: 56px;
+  }
+
+  body {
+    margin-top: 56px;
+    padding: 0;
+  }
+
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Show logo and hamburger menu on mobile */
+  .navbar .logo,
+  .navbar .hamburger {
+    display: block;
+  }
+
+  /* Stack navbar sections with reduced gaps */
+  .left-nav,
+  .mid-nav,
+  .right-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .left-nav {
+    flex: 0 0 auto;
+  }
+
+  .mid-nav {
+    flex: 1 1 auto;
+    min-width: 0;
+    justify-content: center;
+  }
+
+  /* Restrict search box width */
+  .search-box {
+    width: 100%;
+    max-width: 180px;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .right-nav {
+    flex: 0 0 auto;
+    justify-content: flex-end;
+  }
+
+  /* Make filters horizontal scrollable */
+  .filters {
+    position: sticky;
+    top: 56px;
+    z-index: 999;
+    margin-left: 0;
+    overflow: auto;
+    justify-content: flex-start;
+    gap: 15px;
+    white-space: nowrap;
+  }
+
+  .filters .filter {
+    padding: 8px 30px;
+    margin-right: -3px;
+  }
+
+  /* Position hamburger, hide mic, adjust icons */
+  .hamburger {
+    position: relative;
+    bottom: 3px;
+    left: 4px;
+    padding: 0px;
+    margin-right: 8px;
+  }
+
+  .mic i {
+    display: none;
+  }
+
+  .create {
+    position: relative;
+    right: 30px;
+  }
+
+  .user {
+    position: relative;
+    right: 0px;
+  }
+
+  /* Hide search box, show search icon */
+  .search-box {
+    display: none;
+  }
+
+  .search-icon-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 5px 8px;
+    cursor: pointer;
+    margin-left: -30px;
+  }
+
+  /* Full-width video layout */
+  .video-section {
+    margin-left: 0;
+    padding: 12px;
+    gap: 16px;
+  }
+
+  .video-card {
+    width: 100%;
+    height: 300px;
+    padding: 5px;
+  }
+
+  .thumbnail {
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+
+  .channel-img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .text h4 {
+    font-size: 15px;
+  }
+
+  .channel-name,
+  .meta {
+    font-size: 13px;
+  }
+
+}
+
+
+/* ===== Tablets (706px to 991px) ===== */
+@media only screen and (min-width: 705px) and (max-width: 991px) {
+
+  /* Hide sidebar for tablets */
+  .sidebar {
+    display: none;
+  }
+
+  /* Adjust fixed navbar for tablets */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px 16px;
+    height: 60px;
+  }
+
+  body {
+    margin-top: 60px;
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    margin-left: 80px;
+  }
+
+  .search-icon-mobile {
+    display: none;
+  }
+
+  .search-box input {
+    width: 170px;
+  }
+
+  .navbar .logo,
+  .navbar .hamburger {
+    display: block;
+  }
+
+  .hamburger {
+    position: relative;
+    bottom: 3px;
+    left: 0;
+    padding: 0;
+  }
+
+  .create {
+    position: relative;
+    left: 8px;
+  }
+
+  .mic i {
+    position: relative;
+    left: 10px;
+  }
+
+  .right-nav {
+    white-space: nowrap;
+  }
+
+  .filters {
+    position: sticky;
+    top: 60px;
+    z-index: 999;
+    margin-left: 0;
+    padding: 10px 12px;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: flex-start;
+  }
+
+  .filter {
+    padding: 6px 20px;
+    font-size: 14px;
+  }
+
+  .video-section {
+    margin-left: 0;
+    padding: 16px;
+    gap: 20px;
+  }
+
+  .video-card {
+    width: calc(50% - 12px);
+    height: 300px;
+  }
+
+  .thumbnail {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
+
+  .video-details {
+    gap: 10px;
+  }
+
+  .channel-img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .text h4 {
+    font-size: 15px;
+  }
+
+  .channel-name,
+  .meta {
+    font-size: 13px;
+  }
+}
+
+
+/* ===== iPad Portrait (1024px to 1366px) ===== */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+
+  /* Collapse sidebar to icons only */
+  .sidebar {
+    width: 72px;
+    padding-top: 10px;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .sidebar-item {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .sidebar-item i {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .sidebar-item span {
+    display: none;
+  }
+
+  .sidebar-item p {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .sidebar-top {
+    justify-content: center;
+  }
+
+  .sidebar-top .logo {
+    display: none;
+  }
+
+  /* Show logo inside navbar */
+  .navbar .logo {
+    display: block;
+  }
+
+  .navbar .logo img {
+    width: 120px;
+    height: auto;
+    position: relative;
+    top: 4px;
+  }
+
+  /* Adjust margins for collapsed sidebar */
+  .navbar,
+  .filters,
+  .video-section {
+    margin-left: 72px;
+  }
+
+  .video-card {
+    width: calc(50% - 12px);
+    height: 330px;
+  }
+
+  .search-icon-mobile {
+    display: none;
+  }
+
+  .search-box {
+    max-width: 400px;
+  }
+}
+
+
+/* ===== iPad Landscape (1024px to 1366px) ===== */
+@media only screen and (min-width: 992px) and (max-width: 1366px) and (orientation: landscape) {
+
+  /* Same as portrait mode: collapsed sidebar */
+  .sidebar {
+    width: 72px;
+    padding-top: 10px;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .sidebar-item {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .sidebar-item i {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .sidebar-item span {
+    display: none;
+  }
+
+  .sidebar-item p {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .sidebar-top {
+    justify-content: center;
+  }
+
+  .sidebar-top .logo {
+    display: none;
+  }
+
+  .navbar .logo {
+    display: block;
+  }
+
+  .navbar .logo img {
+    width: 120px;
+    height: auto;
+    position: relative;
+    top: 4px;
+  }
+
+  .navbar,
+  .filters,
+  .video-section {
+    margin-left: 72px;
+  }
+
+  .video-card {
+    width: calc(50% - 12px);
+    height: 330px;
+  }
+
+  .search-icon-mobile {
+    display: none;
+  }
+
+  .search-box {
+    max-width: 400px;
+  }
+
+  .filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1365px) {
+  .filters {
+    position: sticky;
+    width: 800px;
+
+  }
+
+
+}
+
+/* ===== Full HD Screens (e.g., 1440x900) ===== */
+@media screen and (min-width: 1439px) and (max-width: 1440px) {
+  .filters {
+    margin-left: 250px;
+  }
+
+  .video-card {
+    width: calc((100% - 40px) / 3);
+    height: 275px;
+  }
+}
+
+
+/* ===== Large Desktops (1200px+) ===== */
+@media only screen and (min-width: 1200px) {
+  .thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .thumbnail-container {
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
+
+  .video-card {
+    width: calc((100% - 40px) / 3);
+    /* 3 per row */
+  }
+
+  .filters {
+    justify-content: space-between;
+    margin-left: 250px;
+  }
+}
